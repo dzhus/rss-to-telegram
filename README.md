@@ -26,7 +26,7 @@ optional arguments:
   -l LOCALTZ            The timezone to be used for the time in the message.
   -v                    Enable verbosity
   --message-format MSGFORMAT
-                        The final message. Will be passed on to format(). Read
+                        The final message. Will be passed on to format_map(). Read
                         telegram.py for more info.
   --parse-mode PARSEMODE
                         The parse mode to be used by Telegram.

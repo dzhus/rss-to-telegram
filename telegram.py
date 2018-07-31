@@ -18,7 +18,7 @@ def send_message(token, chat_id, post, timezone_dest, timezone_orig, message_fmt
   time = dest_dt.strftime('%H:%M:%S')
 
   #text = "*{}*\n_Gepubliceerd om {}_\n[Ga naar het volledige artikel]({})"
-  text = message_fmt.format(post.title, str(time), post.link)
+  text = message_fmt.format_map({"title": post.title, "time": str(time), "link": post.link})
   data = {"chat_id": chat_id, "text": text, "parse_mode": parse_mode}
 
   response = requests.post(url, json=data)

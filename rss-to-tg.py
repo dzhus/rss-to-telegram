@@ -14,7 +14,7 @@ parser.add_argument('-p', dest='preload', help='The amount of seconds in the pas
 parser.add_argument('-z', dest='sourcetz', help='The timezone used in the RSS feed.', default="Etc/UTC")
 parser.add_argument('-l', dest='localtz', help='The timezone to be used for the time in the message.', default='Europe/Amsterdam')
 parser.add_argument('-v', dest='verbose', help='Enable verbosity', action='store_true')
-parser.add_argument('--message-format', dest='msgformat', help='The final message. Will be passed on to format(). Read telegram.py for more info.', default="*{}*\n_Published at {}_\n[Go to the full article]({})")
+parser.add_argument('--message-format', dest='msgformat', help='The final message. Will be passed on to format_map(). Read telegram.py for more info.', default="*{title}*\n_Published at {time}_\n[Go to the full article]({link})")
 parser.add_argument('--parse-mode', dest='parsemode', help='The parse mode to be used by Telegram.', default='markdown')
 parser.add_argument('--time-format', dest='timefmt', help='The formatting for the time in the message. Uses strftime(), so https://docs.python.org/2/library/time.html#time.strftime contains more info.', default='%H:%M:%S')
 
