@@ -1,5 +1,7 @@
 # rss-to-tg
 
+[![](https://images.microbadger.com/badges/image/dzhus/rss-to-telegram.svg)](https://microbadger.com/images/dzhus/rss-to-telegram)
+
 Requires Python 3.4.
 
 ```
